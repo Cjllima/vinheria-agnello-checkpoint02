@@ -72,9 +72,9 @@ while (true) {
         let safra = validarAno("Digite o ano do vinho");
         let quantidade = validarQuantidade("Digite a quantidade do vinho");
         let classificacao = classificarVinho(safra);
-        let estoqueBaixo  = validarQuantidade(quantidade);
+        let estoqueBaixo  = verificarEstoque(quantidade);
 
-        if (vereficarEstoque(quantidade)) {
+        if (estoqueBaixo) {
             alert("Estoque baixo");
             contaVinhosEstoqueBaixo += 1;
         };
