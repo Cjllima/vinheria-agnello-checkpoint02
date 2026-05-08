@@ -1,6 +1,98 @@
-/* if background is lightblue the css is loaded. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap');
 
-body {
-  background-color: lightblue;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background: #faf9f7;
+    color: #1a1a18;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ── Header ── */
+header {
+    padding: 3rem 1.5rem 1rem;
+}
+
+header p {
+    font-size: 13px;
+    color: #6b6b65;
+    letter-spacing: 0.12em;
+    margin-top: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+/* ── Each wine section ── */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.3);
+    gap: 1.25rem;
+}
+
+/* ── Wine name ── */
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/* ── Wine image ── */
+img {
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* ── Wine description ── */
+p {
+    font-size: 14px;
+    color: #6b6b65;
+    line-height: 1.7;
+    max-width: 400px;
+}
+
+section {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e5e5e0;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
